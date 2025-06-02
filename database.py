@@ -184,11 +184,11 @@ select
     , count(distinct case when st.response = 'y' then st.subject_id end) as responders
     , count(distinct case when st.response = 'n' then st.subject_id end) as non_responders
     , round(avg(strftime('%Y %m %d',date('now')) - strftime('%Y %m %d',s.date_of_birth)),2) average_age
-from condition c
+from subject s
 left join subject_condition sc
-    on sc.condition_id = c.condition_id
-left join subject s
-    on s.subject_id = sc.subject_id
+    on sc.subject_id = s.subject_id 
+left join condition c
+    on c.condition_id= sc.condition_id
 left join subject_treatment st
     on s.subject_id = st.subject_id
 left join treatment t
