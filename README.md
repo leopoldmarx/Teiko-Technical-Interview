@@ -22,7 +22,7 @@ git clone https://github.com/leopoldmarx/Teiko-Technical-Interview.git
 cd Teiko-Technical-Interview
 ```
 
-3. Build and run the app using:
+3. Build and run the app in WSL or Unix Enviorment:
 
 ```bash
 make run
