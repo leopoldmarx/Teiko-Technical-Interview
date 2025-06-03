@@ -2,7 +2,7 @@
 
 This is Leopold Marx's submission to a technical interview for Teiko that was assigned Saturday, May 31st, 2025. This repository contains a Streamlit-based web application developed for a technical interview project. It includes a database schema, statistical analysis, and visualizations.
 
-To see the hosted version of the app, please visit (here)[https://teiko.lmarx.com/].
+To see the hosted version of the app, please visit [here](https://teiko.lmarx.com/).
 
 ## Build locally:
 
